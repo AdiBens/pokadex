@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(182, 179, 179);
+}
+
+.ui-menu {
+  min-height: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ui-menu::-webkit-scrollbar {
+  width: 15px;
+}
+
+.ui-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ui-menu::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.ui-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.ui-menu::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 20px;
+}
+
+.ui-menu-item {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(182, 179, 179);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  gap: 100px;
+}
+
+.card-img-top {
+  width: 40px;
+  height: 180px;
+}
+
+.ui-widget {
+  margin-left: 50px;
+  align-self: flex-start;
+}
+.lds-dual-ring {
+  position: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  height: 180px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 16px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #000000 transparent #000000 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.card {
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+.move {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
